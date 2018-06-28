@@ -1,0 +1,347 @@
+@import url('base.css');
+body{
+	background: #f4f4f4;
+}
+header{
+	width: 100%;
+	height: 4.7rem;
+	position: relative;
+	text-align: center;
+	overflow: hidden;
+	background: url('../img/screen.png') no-repeat center bottom,url('../img/screen2.png') no-repeat center bottom,-webkit-linear-gradient(-90deg,#50ade8,#7ae0fa);
+	background-size: 100% auto;
+	color: #fff;
+}
+.title{
+	height: 0.16rem;
+	line-height: 0.16rem;
+	width: 100%;
+	font-size: 0.16rem;
+	margin: 0.18rem auto 0.06rem;
+}
+.temperature{
+	font-size: 0.62rem;
+	line-height: 0.62rem;
+	margin-top: 0.78rem;
+	height: 0.62rem;
+}
+.weather{
+	font-size: 0.22rem;
+	line-height: 0.22rem;
+	margin-top: 0.08rem;
+	height: 0.22rem;
+}
+.show{
+	font-size: 0.14rem;
+	line-height: 0.14rem;
+	margin-top: 0.1rem;
+	height: 0.14rem;
+}
+.tips{
+	font-size: 0.16rem;
+	line-height: 1.5;
+	height: 0.16rem;
+	margin-top: 0.5rem;
+}
+.zhishu{
+	position: absolute;
+	top: 0.67rem;
+	left: 0.08rem;
+	background: #f1ab62;
+	width: 0.72rem;
+	height: 0.44rem;
+	padding: 0.08rem 0.12rem;
+	box-sizing: border-box;
+	border-radius: 0.08rem;
+}
+.til{
+	font-size: 0.12rem;
+	line-height: 0.12rem;
+	height: 0.12rem;
+	margin-bottom: 0.05rem;
+}
+.value{
+	font-size: 0.12rem;
+	line-height: 0.14rem;
+	height: 0.14rem;
+}
+.tomorrow{
+	width: 100%;
+	height: 1.03rem;
+	padding-top: 0.26rem;
+	border-bottom: 0.01rem solid #e4e4e4;
+	margin-bottom: 0.1rem;
+	position: relative;
+	box-sizing: border-box;
+	background: #fff;
+}
+.item{
+	width: 50%;
+	float: left;
+	height: 0.52rem;
+	font-size: 0.14rem;
+	color: #434343;
+	line-height: 0.14rem;
+	padding: 0 0.2rem;
+	box-sizing: border-box;
+}
+.top{
+	height: 0.12rem;
+	margin-bottom: 0.13rem;
+	display: flex;
+	justify-content: space-between;
+}
+
+.bottom{
+	height: 0.22rem;
+	display: flex;
+	justify-content: space-between;
+}
+.bottom>img{
+	display: block;
+	width: 0.22rem;
+	height: 0.22rem;
+}
+.tomorrow::after{
+	content: "";
+    position: absolute;
+    width: 0.01rem;
+    height: 0.52rem;
+    background-color: #f0f0f0;
+    left: 50%;
+    top: 0.26rem;
+}
+.hours{
+	width: 100%;
+	height: 1.36rem;
+	padding-top: 0.3rem;
+	margin-bottom: 0.1rem;
+	border-bottom: 0.01rem solid #e4e4e4;
+	
+	background: #fff;
+	box-sizing: border-box;
+}
+.hours>ul{
+	height: 0.82rem;
+	overflow-x: auto;
+	display: flex;
+}
+.hours>ul::-webkit-scrollbar{
+	height: 0;
+}
+.hours>ul>li{
+	width:0.57rem;
+	height: 0.8rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	float: left;
+	flex-shrink: 0;
+}
+.times{
+	font-size: 0.12rem;
+	line-height: 0.12rem;
+	height: 0.12rem;
+	color: #999;
+}
+.hours>ul>li>img{
+	display: block;
+	width: 0.24rem;
+	height: 0.24rem;
+}
+.degree{
+	font-size: 0.14rem;
+	line-height: 0.14rem;
+	color: #434343;
+	height: 0.14rem;
+}
+.days{
+	width: 100%;
+	height: 2.69rem;
+	background: #fff;
+	border-top: 0.01rem solid #e4e4e4;
+	border-bottom: 0.01rem solid #e4e4e4;
+	padding-top: 0.25rem;
+	margin-bottom: 0.1rem;
+	box-sizing: border-box;
+}
+.days>ul{
+	height: 2.2rem;
+	overflow-x: auto;
+	display: flex;
+}
+.days>ul::-webkit-scrollbar{
+	height: 0;
+}
+.days>ul>li{
+	height: 2.2rem;
+	width: 0.69rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	float: left;
+	flex-shrink: 0;
+	text-align: center;
+}
+.date{
+	font-size: 0.12rem;
+	line-height: 0.12rem;
+	height: 0.12rem;
+	color: #999;
+	margin-bottom: 0.15rem;
+}
+.days>ul>li:first-child{
+	color: #b2b2b2;
+}
+.daytime{
+	height: 0.52rem;
+	margin-bottom: 0.2rem;
+}
+.dayweather{
+	font-size: 0.14rem;
+	line-height: 0.14rem;
+	height: 0.14rem;
+	margin-bottom: 0.14rem;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+}
+.days>ul>li img{
+	display: block;
+	width: 0.24rem;
+	height: 0.24rem;
+	margin: 0 auto;
+}
+.night{
+	height: 0.54rem;
+	margin-bottom: 0.2rem;
+}
+.nightweather{
+	font-size: 0.14rem;
+	line-height: 0.14rem;
+	height: 0.14rem;
+	margin-top: 0.16rem;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+}
+.wind{
+	font-size: 0.12rem;
+	line-height: 0.12rem;
+	height: 0.12rem;
+	margin-bottom: 0.06rem;
+	color: #b2b2b2;
+}
+.container{
+	width: 100%;
+}
+.scroll{
+	height: 1.9rem;
+	background: #fff;
+	overflow: hidden;
+	position: relative;
+}
+.scroll>ul>li{
+	background-color: #fff;
+	float: left;
+    text-align: center;
+    width: 25%;
+    height: 0.94rem;
+    border-right: 0.01rem solid #e6e6e6;
+    border-bottom: 0.01rem solid #e6e6e6;
+    box-sizing: border-box;
+}
+.scroll>ul>li>span{
+	display: block;
+	height: 0.24rem;
+    width: 0.24rem;
+    margin: 0.15rem auto 0.1rem;
+    background-size: 0.24rem;
+}
+.re{
+	background-image: url('../img/chuanyi.png');
+}
+.san{
+	background-image: url('../img/yusan.png');
+}
+.ganmao{
+	background-image: url('../img/ganmao.png');
+}
+.che{
+	background-image: url('../img/xiche.png');
+}
+.yundong{
+	background-image: url('../img/yundong.png');
+}
+.shai{
+	background-image: url('../img/fangshai.png');
+}
+.yu{
+	background-image: url('../img/diaoyu.png');
+}
+.you{
+	background-image: url('../img/xianhao.png');
+}
+.content{
+	font-size: 0.14rem;
+    color: #434343;
+    line-height: 0.14rem;
+    height: 0.14rem;
+    margin-bottom: 0.06rem;
+}
+.title1{
+	color: #999;
+	font-size: 0.12rem;
+    height: 0.12rem;
+    line-height: 0.12rem;
+}
+.tab{
+	width: 100%;
+    text-align: center;
+    background: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.08rem 0;
+}
+.tab>div{
+    width: 0.1rem;
+    height: 0.03rem;
+    background: #e3e3e3;
+    border-radius: 0.03rem;
+    margin: 0 0.05rem;
+}
+.tab>div.current{
+	background: #cecece;
+}
+footer{
+	font-size: 0.12rem;
+    padding: 0.15rem 0;
+    text-align: center;
+    color: #b2b2b2;
+    box-sizing: border-box;
+}
+.links{
+	height: 0.26rem;
+    line-height: 0.26rem;
+    display: inline-block;
+}
+.links1{
+	margin-right: 0.28rem;
+}
+.links2::after{
+	content: "";
+    background: #d5d5d5;
+    width: 0.01rem;
+    height: 0.2rem;
+    display: inline-block;
+    vertical-align: -0.07rem;
+    color: #d5d5d5;
+    margin: 0 0.12rem;
+}
+.copy{
+	height: 0.26rem;
+    line-height: 0.26rem;
+}
